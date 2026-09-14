@@ -12,7 +12,7 @@ export default function SolarAgroDashboard() {
   }, []);
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#0f172a', color: '#f8fafc', padding: '24px' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#0f172a', color: '#f8fafc', padding: '24px', fontFamily: 'sans-serif' }}>
       {/* Header */}
       <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid #334155', paddingBottom: '16px', marginBottom: '24px' }}>
         <div>
@@ -24,7 +24,7 @@ export default function SolarAgroDashboard() {
         </div>
       </header>
 
-      {/* Cards */}
+      {/* Cards Layout */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px', marginBottom: '24px' }}>
         <div style={{ backgroundColor: '#1e293b', padding: '16px', borderRadius: '12px', border: '1px solid #334155' }}>
           <div style={{ color: '#fbbf24', fontSize: '14px', fontWeight: '600', marginBottom: '8px' }}>☀️ সৌর বিদ্যুৎ উৎপাদন</div>
@@ -34,7 +34,7 @@ export default function SolarAgroDashboard() {
 
         <div style={{ backgroundColor: '#1e293b', padding: '16px', borderRadius: '12px', border: '1px solid #334155' }}>
           <div style={{ color: '#60a5fa', fontSize: '14px', fontWeight: '600', marginBottom: '8px' }}>💧 কৃষি সেচ অটোমেশন</div>
-          <div style={{ fontSize: '16px', fontWeight: 'bold', color: '#34d399' }}>{irrigationStatus}</div>
+          <div style={{ fontSize: '15px', fontWeight: 'bold', color: '#34d399' }}>{irrigationStatus}</div>
           <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '4px' }}>স্মার্ট সয়েল সেন্সর যুক্ত</p>
         </div>
 
@@ -51,7 +51,7 @@ export default function SolarAgroDashboard() {
         </div>
       </div>
 
-      {/* Action Sections */}
+      {/* Control Area */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px' }}>
         <div style={{ backgroundColor: '#1e293b', padding: '20px', borderRadius: '12px', border: '1px solid #334155' }}>
           <h2 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '8px' }}>চিন্ত সোলার ও সরকার ভিউ (Demo Control)</h2>
